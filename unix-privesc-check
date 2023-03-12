@@ -133,7 +133,7 @@ banner () {
 	echo 
 }
 
-MODE="standard"
+$MODE="standard"
 
 if [ ! "$MODE" = "standard" ] && [ ! "$MODE" = "detailed" ]; then
 	usage
