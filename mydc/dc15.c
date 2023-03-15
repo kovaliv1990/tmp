@@ -1,4 +1,4 @@
-/
+
 // This exploit uses the pokemon exploit of the dirtycow vulnerability
 // as a base and automatically generates a new passwd line.
 // The user will be prompted for the new password when the binary is run.
