@@ -700,9 +700,9 @@ int main() {
 
 	check_root();
 
-	while (true) {
-		sleep(10);
-	}
+	//while (true) {
+	//	sleep(10);
+	//}
 
 	return 0;
 }
