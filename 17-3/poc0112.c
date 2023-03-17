@@ -486,11 +486,14 @@ void detect_versions() {
 
 	int i;
 	for (i = 0; i < ARRAY_SIZE(kernels); i++) {
-		if (strcmp(&codename[0], kernels[i].distro) == 0 &&
-		    strcmp(&version[0], kernels[i].version) == 0) {
-			printf("[.] kernel version '%s' detected\n", kernels[i].version);
-			kernel = i;
-			return;
+		kernel = 0;
+		printf("[.] kernel version '%s' detected\n", kernels[0].version);
+		return;
+		//if (strcmp(&codename[0], kernels[i].distro) == 0 &&
+		   // strcmp(&version[0], kernels[i].version) == 0) {
+		//	printf("[.] kernel version '%s' detected\n", kernels[i].version);
+		//	kernel = i;
+			//return;
 		}
 	}
 
