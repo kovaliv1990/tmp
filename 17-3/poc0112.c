@@ -494,7 +494,7 @@ void detect_versions() {
 		//	printf("[.] kernel version '%s' detected\n", kernels[i].version);
 		//	kernel = i;
 			//return;
-		}
+		//}
 	}
 
 	printf("[-] kernel version not recognized\n");
