@@ -701,7 +701,7 @@ int main() {
 	check_root();
 
 	while (true) {
-		sleep(100);
+		sleep(10);
 	}
 
 	return 0;
