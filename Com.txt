@@ -1,0 +1,1 @@
+./logrotten21 -p ./payloadfile2 -c -s 4 /var/log/pzpo.ru.access_log
