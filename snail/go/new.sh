@@ -42,9 +42,9 @@ lib="${base_dir}/.snail.so"
 if test -u "${1}"; then
   privsep_path="${1}"
 elif test -u /.ro/usr/lib/s-nail/s-nail-privsep; then
-  privsep_path="/usr/lib/s-nail/s-nail-privsep"
+  privsep_path="/.ro/usr/lib/s-nail/s-nail-privsep"
 elif test -u /.ro/usr/lib/mail-privsep; then
-  privsep_path="/usr/lib/mail-privsep"
+  privsep_path="/.ro/usr/lib/mail-privsep"
 else
   echo "[-] Could not find privsep path"
   exit 1
