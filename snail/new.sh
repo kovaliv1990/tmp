@@ -34,7 +34,7 @@
 # <bcoles@gmail.com>
 # https://github.com/bcoles/local-exploits/tree/master/CVE-2017-5899
 
-base_dir="."
+base_dir="/var/tmp"
 rootshell="${base_dir}/.sh"
 privget="${base_dir}/.privget"
 lib="${base_dir}/.snail.so"
