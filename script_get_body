@@ -1,0 +1,4 @@
+#!/bin/bash
+
+export PATH=/tmp:$PATH
+/usr/sbin/unix_chkpwd
