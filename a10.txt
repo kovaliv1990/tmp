@@ -1,5 +1,3 @@
 <?php
-    echo "<script>"
-    echo "console.log('Hello World')"
-    echo "</script>"
+    print "ok"; 
 ?>
